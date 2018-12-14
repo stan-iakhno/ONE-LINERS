@@ -1,0 +1,6 @@
+ #!/bin/bash
+    for f in *.fasta; do
+     fname=$(ls $f | sed 's/.fasta//' )
+     echo "Creating directory [$fname]"
+     mkdir "$fname"
+  done
