@@ -1,0 +1,8 @@
+rename 's/NG-12992_//' *.fastq
+sudo apt-get install mmv
+mmv '*lib*' '#1#2'
+rename 's/_2/-2/' *fastq
+rename 's/2_1/f/' *fastq
+rename 's/2_2/r/' *fastq
+rename 's/_//' *fastq
+rename 's/_//' *fastq
