@@ -1,0 +1,2 @@
+#removes M-N range of characters in a filename
+ls *.gz | while read f; do echo "$f" "${f:0:N}${f:M}"; done
