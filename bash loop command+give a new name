@@ -1,0 +1,6 @@
+#!/bin/bash
+
+for f in *.fastq.gz
+do
+	vsearch --fastx_subsample $f --randseed 22 --sample_size 200000 --fastqout ${f/.fastq.gz/_subsample200k.fastq.gz}
+done
