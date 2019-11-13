@@ -4,5 +4,4 @@ faidx -x XXXXXXX.fasta
 OR
 
 
-
 csplit -z nannie.contigs.fasta '/>/' '{*}'
