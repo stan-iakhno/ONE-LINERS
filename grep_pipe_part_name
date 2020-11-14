@@ -1,0 +1,1 @@
+grep 'PTS system cellobiose-specific EIIB'  PP_dRep_bin** | sed -E 's/(.*):.*/\1/'
